@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#050b16">
+
+    <title>JARVIS CORE 4.0</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="app">
+
+    <header class="topbar">
+        <div>
+            <h1>JARVIS <span>CORE</span></h1>
+            <p>PERSONAL AI ASSISTANT</p>
+        </div>
+
+        <div class="version">VERSION 4.0</div>
+    </header>
+
+    <main>
+
+        <section class="reactor-section">
+
+            <div class="reactor">
+                <div class="reactor-ring ring-one"></div>
+                <div class="reactor-ring ring-two"></div>
+                <div class="reactor-ring ring-three"></div>
+                <div class="reactor-core"></div>
+            </div>
+
+            <h2>JARVIS</h2>
+
+            <p id="voiceStatus">SYSTEM INITIALIZING...</p>
+
+            <div class="connection">
+                <span class="status-dot"></span>
+                <span id="connectionStatus">CHECKING CONNECTION</span>
+            </div>
+
+        </section>
+
+        <section class="chat-section">
+
+            <div class="chat-heading">
+                <h3>CONVERSATION</h3>
+
+                <button id="clearButton" type="button">
+                    Clear chat
+                </button>
+            </div>
+
+            <div id="chat" class="chat">
+
+                <div class="message jarvis-message">
+                    <strong>JARVIS</strong>
+                    <p>Good day, sir. JARVIS CORE 4.0 is ready. How may I assist you?</p>
+                </div>
+
+            </div>
+
+            <div class="language-area">
+                <label for="languageSelect">Response language</label>
+
+                <select id="languageSelect">
+                    <option value="en">English</option>
+                    <option value="ha">Hausa</option>
+                    <option value="pcm">Nigerian Pidgin</option>
+                    <option value="fr">French</option>
+                    <option value="ar">Arabic</option>
+                </select>
+            </div>
+
+            <div class="input-area">
+
+                <input
+                    id="userInput"
+                    type="text"
+                    placeholder="Ask JARVIS anything..."
+                    autocomplete="off"
+                >
+
+                <button id="voiceButton" type="button"
+                    aria-label="Start voice recognition">
+                    🎙
+                </button>
+
+                <button id="sendButton" type="button">
+                    SEND
+                </button>
+
+            </div>
+
+            <p class="footer">
+                CREATED BY JAFAR MUHAMMAD LAWAL
+            </p>
+
+        </section>
+
+    </main>
+
+</div>
+
+<script src="config.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
